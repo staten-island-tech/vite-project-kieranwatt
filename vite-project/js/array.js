@@ -72,12 +72,12 @@ const sillybladees = [
         img:"",
     },
     {
-        title:"",
-        imgdesc:"",
-        type:"",
-        country:"",
+        title:"menace",
+        imgdesc:"intresting",
+        type:"people",
+        country:"canada",
         dabloons:"1738",
-        kieranrating:"",
+        kieranrating:"1",
         img:"",
     },
 ]
