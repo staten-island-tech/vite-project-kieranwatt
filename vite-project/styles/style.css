@@ -52,3 +52,6 @@ h5,
 h6 {
   text-align: center;
 }
+.header-desc {
+  font-size: var(--h4);
+}
