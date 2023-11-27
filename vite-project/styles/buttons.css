@@ -1,0 +1,45 @@
+@import url(style.css);
+@import url(header.css);
+@import url(thegoods.css);
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+.themebtn {
+    position: relative;
+}
+.typefilter {
+    position: relative;
+}
+.kieranrating {
+    position: relative;
+}
+.dabloonprice {
+    position: relative;
+}
+.themebtn {
+    font-size: 2rem;
+    height: 5rem;
+    width: 10rem;
+    background-color: var(--btnbacco);
+}
+.typebtn {
+    font-size: 1rem;
+    height: 5rem;
+    width: 10rem;
+    background-color: var(--btnbacco);
+}
+.ratingbtn {
+    font-size: 2rem;
+    height: 5rem;
+    width: 10rem;
+    background-color: var(--btnbacco);
+}
+.pricebtn {
+    font-size: 1rem;
+    height: 5rem;
+    width: 10rem;
+    background-color: var(--btnbacco);
+}

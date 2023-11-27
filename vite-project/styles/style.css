@@ -1,11 +1,16 @@
 @import url(header.css);
+@import url(buttons.css);
+@import url(thegoods.css);
 
-html,body,*{
+html,
+body,
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-size: 62.5%;
 }
+
 :root {
   --dark: #000000;
   --bluee: #07cccf;
@@ -15,7 +20,11 @@ html,body,*{
   --greenee: #1da829;
 
   --primary: var(--dark);
-  --secondary: var(--bluee);
+  --secondary: var(--light);
+  --tertiary: var(--greenee);
+  --quarternary: var(--bluee);
+  --quinary: var(--pinkee);
+
 
 
   --h1: 2.986rem;
@@ -26,24 +35,51 @@ html,body,*{
   --h6: 1.2rem;
 }
 
+.darkmode {
+  background-color: var(--primary);
+  color: var(--primary);
+  --btntxt: var(--secondary);
+  --btnbacco: var(--quinary);
+  --btnborder: var(--tertiary);
+  --cardtxt: var(--secondary);
+  --cardbacco: var(--quinary);
+  --cardborder: var(--tertiary);
+}
+.lightmode {
+  background-color: var(--secondary);
+  color: var(--secondary);
+  --btntxt: var(--primary);
+  --btnbacco: var(--quarternary);
+  --btnborder: var(--tertiary);
+  --cardtxt: var(--primary);
+  --cardbacco: var(--quarternary);
+  --cardborder: var(--tertiary);
+}
+
 h1 {
   font-size: var(--h1);
 }
+
 h2 {
   font-size: var(--h2);
 }
+
 h3 {
   font-size: var(--h3);
 }
+
 h4 {
   font-size: var(--h4);
 }
+
 h5 {
   font-size: var(--h5);
 }
+
 h6 {
   font-size: var(--h6);
 }
+
 h1,
 h2,
 h3,
@@ -52,6 +88,7 @@ h5,
 h6 {
   text-align: center;
 }
+
 .header-desc {
   font-size: var(--h4);
 }
