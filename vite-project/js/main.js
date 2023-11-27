@@ -2,10 +2,6 @@ import "../styles/style.css";
 import { domselectors } from "./selectors";
 import { sillybladees } from "./array";
 
-/* const store = function(sillybladees) {
-    domselectors.cards.insertAdjacentHTML("beforeend", 
-    '<div class="card" id="card" ')
-} */
 const store = function(sillybladees) {
     domselectors.cards.insertAdjacentHTML("beforeend",
     ` <div class="card" id="card">
@@ -20,3 +16,7 @@ const store = function(sillybladees) {
 };
 console.log(sillybladees);
 sillybladees.forEach((card)=>store(card));
+
+domselectors.looks.addEventListener ("click", function(){
+    
+})
