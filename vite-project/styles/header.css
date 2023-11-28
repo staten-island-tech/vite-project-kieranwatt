@@ -5,8 +5,6 @@
 .header {
     padding: 2rem;
     background-color: var(--bluee);
-    border-width: 100px;
-    border-color: var(--greenee);
     position: relative;
     display: flex;
     justify-content: center;

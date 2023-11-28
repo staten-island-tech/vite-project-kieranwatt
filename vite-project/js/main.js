@@ -37,6 +37,15 @@ document.querySelector(".themebtn").addEventListener("click", function () {
   }
 })
 
+
+
+/* let buttons = document.querySelectorAll(".typebtn")
+buttons.forEach((btn)=> btn.addEventListener("click",
+function() {
+  let filter = btn.textContent
+  let
+})) */
+
 /* document.querySelector(".typebtn").addEventListener("click", function () {
   if(document.body.classList.contains("ITEMS")) {
     document.body.classList.add("STRUCTURES");
