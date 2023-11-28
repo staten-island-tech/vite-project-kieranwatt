@@ -4,7 +4,7 @@
 
 .buttons {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     padding: 5rem;
 }
 .themebtn {

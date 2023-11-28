@@ -39,6 +39,7 @@ document.querySelector(".themebtn").addEventListener("click", function () {
 
 
 
+
 /* let buttons = document.querySelectorAll(".typebtn")
 buttons.forEach((btn)=> btn.addEventListener("click",
 function() {
@@ -46,7 +47,7 @@ function() {
   let
 })) */
 
-/* document.querySelector(".typebtn").addEventListener("click", function () {
+ document.querySelector(".typebtn").addEventListener("click", function () {
   if(document.body.classList.contains("ITEMS")) {
     document.body.classList.add("STRUCTURES");
     document.body.classList.remove("ITEMS");
@@ -54,4 +55,4 @@ function() {
     document.body.classList.add("ITEMS");
     document.body.classList.remove("STRUCTURES");
   }
-}) */
+}) 
