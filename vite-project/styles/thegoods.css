@@ -6,7 +6,7 @@
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    grid-template-columns: 18vw 18vw 18vw 18vw 18vw;
+    grid-template-columns: 10vw 10vw 10vw 10vw 10vw;
 }
 .card {
     width: 30rem;
@@ -15,42 +15,47 @@
     border-style: solid;
     border-width: 3px;
     border-color: var(--violetee);
-    background-color: var(--productBackground);
+    background-color: var(--cardbacco);
 }
-.product-img {
-    overflow: hidden;
-    object-fit: cover;
-    width: 29.3rem;
+.card-img {
+    width: 20rem;
+    height: 25rem;
 }
-.product-title {
-    font-size: var(--h5);
+.card-title {
+    font-size: var(--h1);
     padding: 1rem;
-    color: var(--productTextColor);
+    color: var(--cardtxt);
     
 }
-.product-vinylType {
-    font-size: var(--h6);
+.card-type {
+    font-size: var(--h3);
     padding-left: 1rem;
     padding-right: 1rem;
-    color: var(--productTextColor);
+    color: var(--cardtxt);
 
 }
-.product-artist {
-    font-size: var(--h6);
+.card-desc {
+    font-size: var(--h3);
+    padding-left:1rem;
+    padding-right:1rem;
+    color: var(--cardtxt);
+}
+.card-country {
+    font-size: var(--h3);
     padding-left: 1rem;
     padding-right: 1rem;
-    color: var(--productTextColor);
+    color: var(--cardtxt);
 }
-.product-price {
-    font-size: var(--h5);
+.card-dabloons {
+    font-size: var(--h3);
     padding-left: 1rem;
     padding-right: 1rem;
-    color: var(--productTextColor);
+    color: var(--cardtxt);
 }
-.product-genre {
-    font-size: var(--h5);
+.card-kieranrating {
+    font-size: var(--h3);
     padding-left: 1rem;
     padding-right: 1rem;
     padding-bottom: 1rem;
-    color: var(--productTextColor);
+    color: var(--cardtxt);
 }

@@ -17,6 +17,32 @@ const store = function(sillybladees) {
 console.log(sillybladees);
 sillybladees.forEach((card)=>store(card));
 
-domselectors.looks.addEventListener ("click", function(){
-    
+const array = function () {
+  sillybladees.map((cards) => ({
+    title: cards.title,
+    type: cards.type,
+    imgdesc: cards.imgdesc,
+    dabloons: cards.dabloons,
+    kieranrating: cards.kieranrating,
+  }))
+}
+
+document.querySelector(".themebtn").addEventListener("click", function () {
+  if(document.body.classList.contains("darkmode")) {
+    document.body.classList.add("lightmode");
+    document.body.classList.remove("darkmode");
+  } else {
+    document.body.classList.add("darkmode");
+    document.body.classList.remove("lightmode");
+  }
 })
+
+/* document.querySelector(".typebtn").addEventListener("click", function () {
+  if(document.body.classList.contains("ITEMS")) {
+    document.body.classList.add("STRUCTURES");
+    document.body.classList.remove("ITEMS");
+  } else {
+    document.body.classList.add("ITEMS");
+    document.body.classList.remove("STRUCTURES");
+  }
+}) */
