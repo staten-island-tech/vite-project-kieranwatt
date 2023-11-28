@@ -25,7 +25,13 @@
     width: 10rem;
     background-color: var(--btnbacco);
 }
-.typebtn {
+.typebtnitems {
+    font-size: 1rem;
+    height: 5rem;
+    width: 10rem;
+    background-color: var(--btnbacco);
+}
+.typebtnstructures {
     font-size: 1rem;
     height: 5rem;
     width: 10rem;

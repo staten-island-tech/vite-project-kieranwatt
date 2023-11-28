@@ -37,6 +37,10 @@ document.querySelector(".themebtn").addEventListener("click", function () {
   }
 })
 
+document.querySelector(".typebtnitem").addEventListener("click", function (){
+  sillybladees.filter( item => item.type === "structure")
+})
+sillybladees.forEach((card)=>store(card));
 
 
 
