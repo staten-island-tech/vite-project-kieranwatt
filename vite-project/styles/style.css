@@ -10,7 +10,7 @@ body,
   box-sizing: border-box;
   font-size: 62.5%;
 }
-
+/* defines basic colors, gives them primary, secondary, etc values, and assigns the text size values */
 :root {
   --dark: #000000;
   --bluee: #07cccf;
@@ -34,7 +34,7 @@ body,
   --h5: 1.5rem;
   --h6: 1rem;
 }
-
+/* defines darkmode theme presets */
 .darkmode {
   background-color: var(--primary);
   color: var(--primary);
@@ -45,6 +45,7 @@ body,
   --cardbacco: var(--quinary);
   --cardborder: var(--tertiary);
 }
+/* defines lightmode theme presets */
 .lightmode {
   background-color: var(--secondary);
   color: var(--secondary);

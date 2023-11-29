@@ -15,16 +15,7 @@ const store = function(sillybladees) {
       </div>
       `)
 };
-//I think i need to add these to get the more then 2 buttons
-/* const array = function () {
-  sillybladees.map((cards) => ({
-    title: cards.title,
-    type: cards.type,
-    imgdesc: cards.imgdesc,
-    dabloons: cards.dabloons,
-    kieranrating: cards.kieranrating,
-  }))
-}; */
+
 
 //clear function
 function clearee() {
@@ -50,30 +41,38 @@ domselectors.structure.addEventListener("click", function () {
     store(structuretrue);
   });
 });
-//buttons that arent working asking in class
-/* domselectors.goodrate.addEventListener("click", function () {
+
+domselectors.goodrate.addEventListener("click", function () {
   const agoodratee = sillybladees.filter((goodratetrue) => goodratetrue.kieranrating === "goodrate");
   clearee();
   agoodratee.forEach((goodratetrue) => {
     store(goodratetrue);
   });
-}); */
+});
 
-/* domselectors.badrate.addEventListener("click", function () {
-  const badratee = sillybladees.filter((badratetrue) => badratetrue.kieranrating === "bad");
+domselectors.badrate.addEventListener("click", function () {
+  const badratee = sillybladees.filter((badratetrue) => badratetrue.kieranrating === "badrate");
   clearee();
   badratee.forEach((badratetrue) => {
     store(badratetrue);
   });
 });
- */
-/* domselectors.expensive.addEventListener("click", function () {
+
+domselectors.expensive.addEventListener("click", function () {
   const expensivee = sillybladees.filter((tooexpensivetrue) => tooexpensivetrue.dabloons === "expensive");
   clearee();
   expensivee.forEach((tooexpensivetrue) => {
     store(tooexpensivetrue);
   });
-}); */
+});
+
+domselectors.cheap.addEventListener("click", function () {
+  const cheapee = sillybladees.filter((cheaptrue) => cheaptrue.dabloons === "cheap");
+  clearee();
+  cheapee.forEach((cheaptrue) => {
+    store(cheaptrue);
+  });
+});
 
 
 //darklightmode
