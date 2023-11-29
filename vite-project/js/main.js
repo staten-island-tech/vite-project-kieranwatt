@@ -39,30 +39,32 @@ domselectors.structure.addEventListener("click", function () {
   });
 });
 
-domselectors.goodrate.addEventListener("click", function () {
-  const goodratee = sillybladees.filter((goodratetrue) => goodratetrue.kieranrating === "good");
+/* domselectors.goodrate.addEventListener("click", function () {
+  const goodratee = sillybladees.filter((goodratetrue) => goodratetrue.kieranrating === "goodrate");
   clearee();
   goodratee.forEach((goodratetrue) => {
     store(goodratetrue);
   });
-});
+}); */
 
-domselectors.badrate.addEventListener("click", function () {
+/* domselectors.badrate.addEventListener("click", function () {
   const badratee = sillybladees.filter((badratetrue) => badratetrue.kieranrating === "bad");
   clearee();
   badratee.forEach((badratetrue) => {
     store(badratetrue);
   });
 });
-
-domselectors.tooexpensive.addEventListener("click", function () {
+ */
+/* domselectors.expensive.addEventListener("click", function () {
   const expensivee = sillybladees.filter((tooexpensivetrue) => tooexpensivetrue.dabloons === "expensive");
   clearee();
   expensivee.forEach((tooexpensivetrue) => {
     store(tooexpensivetrue);
   });
-});
+}); */
 
+
+//darklightmode
 document.querySelector("#looks").addEventListener("click", function () {
   if (document.body.classList.contains("darkmode")) {
     document.body.classList.add("lightmode");

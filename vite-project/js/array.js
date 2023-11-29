@@ -5,7 +5,7 @@ const sillybladees = [
         type:"item",
         country:"Cambodia",
         dabloons:"cheap",
-        kieranrating:"bad",
+        kieranrating:"badrate",
         img:"https://www.shutterstock.com/image-vector/bindle-stick-runaway-hobo-mascot-600nw-2363704785.jpg",
     },
     {
@@ -14,7 +14,7 @@ const sillybladees = [
         type:"structure",
         country:"China",
         dabloons:"expensive",
-        kieranrating:"bad",
+        kieranrating:"badrate",
         img:"https://img2.chinadaily.com.cn/images/202304/30/644de0a8a310b60580cc2408.png",
     },
     {
@@ -23,7 +23,7 @@ const sillybladees = [
         type:"item",
         country:"Japan",
         dabloons:"cheap",
-        kieranrating:"good",
+        kieranrating:"goodrate",
         img:"https://www.pokemoncenter.com/images/DAMRoot/High/10000/P8737_710-95847_02.jpg",
     },
     {
@@ -32,7 +32,7 @@ const sillybladees = [
         type:"structure",
         country:"Italy",
         dabloons:"expensive",
-        kieranrating:"bad",
+        kieranrating:"badrate",
         img:"https://cdn.britannica.com/88/80588-050-8D944BFE/Leaning-Tower-of-Pisa-Italy.jpg",
     },
     {
@@ -41,7 +41,7 @@ const sillybladees = [
         type:"structure",
         country:"Hong Kong",
         dabloons:"cheap",
-        kieranrating:"good",
+        kieranrating:"goodrate",
         img:"https://multimedia.scmp.com/infographics/culture/article/3183200/bamboo-scaffolding/img/building2.jpg",
     },
     {
@@ -50,7 +50,7 @@ const sillybladees = [
         type:"item",
         country:"Thailand",
         dabloons:"cheap",
-        kieranrating:"good",
+        kieranrating:"goodrate",
         img:"https://www.mudmotorkit.com/wp-content/uploads/2019/05/thai-racing-1-SPS-Swamp-Runner.jpg",
     },
     {
@@ -59,7 +59,7 @@ const sillybladees = [
         type:"item",
         country:"Japan",
         dabloons:"cheap",
-        kieranrating:"good",
+        kieranrating:"goodrate",
         img:"https://bringatrailer.com/wp-content/uploads/2016/12/Screen-Shot-2016-12-06-at-12.20.17-PM.png?fit=940%2C711",
     },
     {
@@ -68,7 +68,7 @@ const sillybladees = [
         type:"item",
         country:"Germany",
         dabloons:"expensive",
-        kieranrating:"good",
+        kieranrating:"goodrate",
         img:"https://assets.bwbx.io/images/users/iqjWHBFdfxIU/ijsxlvQB.bu8/v0/1200x800.jpg",
     },
     {
@@ -77,7 +77,7 @@ const sillybladees = [
         type:"structure",
         country:"USA",
         dabloons:"expensive",
-        kieranrating:"bad",
+        kieranrating:"badrate",
         img:"https://upload.wikimedia.org/wikipedia/commons/1/10/432_Park_Avenue%2C_NY_%28cropped%292.jpg",
     },
 ]
