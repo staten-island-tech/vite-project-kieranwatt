@@ -4,7 +4,7 @@ import { sillybladees } from "./array";
 
 const store = function(sillybladees) {
     domselectors.cards.insertAdjacentHTML("beforeend",
-    ` <div class="card" id="card">
+    ` <div class="card" id="allcards">
       <img src="${sillybladees.img}" alt="img for ${sillybladees.title}." class="card-img">
       <h4 class="card-title">${sillybladees.title}</h4>
       <h4 class="card-type">${sillybladees.type}</h4>
@@ -14,49 +14,62 @@ const store = function(sillybladees) {
       </div>
       `)
 };
-console.log(sillybladees);
-sillybladees.forEach((card)=>store(card));
 
-const array = function () {
-  sillybladees.map((cards) => ({
-    title: cards.title,
-    type: cards.type,
-    imgdesc: cards.imgdesc,
-    dabloons: cards.dabloons,
-    kieranrating: cards.kieranrating,
-  }))
+function clearee() {
+  domselectors.cards.innerHTML = "";
 }
 
-document.querySelector(".themebtn").addEventListener("click", function () {
-  if(document.body.classList.contains("darkmode")) {
+sillybladees.forEach((card) => {
+  store(card);
+});
+
+domselectors.item.addEventListener("click", function () {
+  const itemees = sillybladees.filter((itemtrue) => itemtrue.type === "item");
+  clearee();
+  itemees.forEach((itemtrue) => {
+    store(itemtrue);
+  });
+});
+
+domselectors.structure.addEventListener("click", function () {
+  const structurees = sillybladees.filter((structuretrue) => structuretrue.type === "structure");
+  clearee();
+  structurees.forEach((structuretrue) => {
+    store(structuretrue);
+  });
+});
+
+domselectors.goodrate.addEventListener("click", function () {
+  const goodratee = sillybladees.filter((goodratetrue) => goodratetrue.kieranrating === "good");
+  clearee();
+  goodratee.forEach((goodratetrue) => {
+    store(goodratetrue);
+  });
+});
+
+domselectors.badrate.addEventListener("click", function () {
+  const badratee = sillybladees.filter((badratetrue) => badratetrue.kieranrating === "bad");
+  clearee();
+  badratee.forEach((badratetrue) => {
+    store(badratetrue);
+  });
+});
+
+domselectors.tooexpensive.addEventListener("click", function () {
+  const expensivee = sillybladees.filter((tooexpensivetrue) => tooexpensivetrue.dabloons === "expensive");
+  clearee();
+  expensivee.forEach((tooexpensivetrue) => {
+    store(tooexpensivetrue);
+  });
+});
+
+document.querySelector("#looks").addEventListener("click", function () {
+  if (document.body.classList.contains("darkmode")) {
     document.body.classList.add("lightmode");
     document.body.classList.remove("darkmode");
   } else {
     document.body.classList.add("darkmode");
     document.body.classList.remove("lightmode");
   }
-})
+});
 
-document.querySelector(".typebtnitem").addEventListener("click", function (){
-  sillybladees.filter( item => item.type === "structure")
-})
-sillybladees.forEach((card)=>store(card));
-
-
-
-/* let buttons = document.querySelectorAll(".typebtn")
-buttons.forEach((btn)=> btn.addEventListener("click",
-function() {
-  let filter = btn.textContent
-  let
-})) */
-
- document.querySelector(".typebtn").addEventListener("click", function () {
-  if(document.body.classList.contains("ITEMS")) {
-    document.body.classList.add("STRUCTURES");
-    document.body.classList.remove("ITEMS");
-  } else {
-    document.body.classList.add("ITEMS");
-    document.body.classList.remove("STRUCTURES");
-  }
-}) 
