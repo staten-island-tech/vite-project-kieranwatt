@@ -2,6 +2,7 @@ import "../styles/style.css";
 import { domselectors } from "./selectors";
 import { sillybladees } from "./array";
 
+//makes cards
 const store = function(sillybladees) {
     domselectors.cards.insertAdjacentHTML("beforeend",
     ` <div class="card" id="allcards">
@@ -14,7 +15,18 @@ const store = function(sillybladees) {
       </div>
       `)
 };
+//I think i need to add these to get the more then 2 buttons
+/* const array = function () {
+  sillybladees.map((cards) => ({
+    title: cards.title,
+    type: cards.type,
+    imgdesc: cards.imgdesc,
+    dabloons: cards.dabloons,
+    kieranrating: cards.kieranrating,
+  }))
+}; */
 
+//clear function
 function clearee() {
   domselectors.cards.innerHTML = "";
 }
@@ -22,7 +34,7 @@ function clearee() {
 sillybladees.forEach((card) => {
   store(card);
 });
-
+//when the button is pressed, it keeps cards with item value, and removes the rest 
 domselectors.item.addEventListener("click", function () {
   const itemees = sillybladees.filter((itemtrue) => itemtrue.type === "item");
   clearee();
@@ -38,11 +50,11 @@ domselectors.structure.addEventListener("click", function () {
     store(structuretrue);
   });
 });
-
+//buttons that arent working asking in class
 /* domselectors.goodrate.addEventListener("click", function () {
-  const goodratee = sillybladees.filter((goodratetrue) => goodratetrue.kieranrating === "goodrate");
+  const agoodratee = sillybladees.filter((goodratetrue) => goodratetrue.kieranrating === "goodrate");
   clearee();
-  goodratee.forEach((goodratetrue) => {
+  agoodratee.forEach((goodratetrue) => {
     store(goodratetrue);
   });
 }); */
