@@ -2,7 +2,6 @@ import "../styles/style.css";
 import { domselectors } from "./selectors";
 import { sillybladees } from "./array";
 
-//makes cards
 const store = function(sillybladees) {
     domselectors.cards.insertAdjacentHTML("beforeend",
     ` <div class="card" id="allcards">
@@ -11,21 +10,19 @@ const store = function(sillybladees) {
       <h4 class="card-type">${sillybladees.type}</h4>
       <h5 class="card-desc">${sillybladees.imgdesc}</h5>
       <h5 class="card-dabloons">${sillybladees.dabloons}</h5>
-      <h6 class="card-kieranrating">$${sillybladees.kieranrating}</h6>
+      <h6 class="card-kieranrating">${sillybladees.kieranrating}</h6>
       </div>
       `)
 };
 
-
-//clear function
-function clearee() {
+const clearee = function() {
   domselectors.cards.innerHTML = "";
 }
 
 sillybladees.forEach((card) => {
   store(card);
-});
-//when the button is pressed, it keeps cards with item value, and removes the rest 
+}); 
+
 domselectors.item.addEventListener("click", function () {
   const itemees = sillybladees.filter((itemtrue) => itemtrue.type === "item");
   clearee();
@@ -75,12 +72,14 @@ domselectors.cheap.addEventListener("click", function () {
 });
 
 
+
 //darklightmode
 document.querySelector("#looks").addEventListener("click", function () {
   if (document.body.classList.contains("darkmode")) {
     document.body.classList.add("lightmode");
     document.body.classList.remove("darkmode");
-  } else {
+  } 
+  else {
     document.body.classList.add("darkmode");
     document.body.classList.remove("lightmode");
   }

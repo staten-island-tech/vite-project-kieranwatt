@@ -5,7 +5,7 @@
 .buttons {
     display: flex;
     justify-content: left;
-    padding: 5rem;
+    padding: 1rem;
 }
 .themebtn {
     position: relative;
